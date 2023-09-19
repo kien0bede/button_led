@@ -95,20 +95,20 @@ int main(void)
     /* USER CODE END WHILE */
 	  while (1)
 	  {
-	    /* Kiểm tra trạng thái của nút nhấn */
+	    /* Kiem tra trang thai nut */
 	    if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET)
 	    {
-	      /* Nút nhấn được nhấn */
+	      /* Nut duoc nhan */
 
-	      /* Bật đèn LED PB4 và tắt đèn LED PA6 */
+	      /* Bat den LED PB4 và tat den LED PA6 */
 	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_SET);
 	      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
 	    }
 	    else
 	    {
-	      /* Nút nhấn không được nhấn */
+	      /* Nut khong duoc nhan */
 
-	      /* Bật đèn LED PA6 và tắt đèn LED PB4 */
+	      /* Bat den LED PA6 va tat den LED PB4 */
 	      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
 	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
 	    }
